@@ -1,0 +1,8 @@
+.form-group
+  .row
+    = label_tag :name, 'Location name:', class: 'col-md-5 control-label'
+    .col-md-7
+      %input#name.location-input{:type => 'text', class: 'form-control'}
+.location-item-spacer
+  %button#save{class: 'btn btn-default btn-large location-button'}
+    Save These Settings

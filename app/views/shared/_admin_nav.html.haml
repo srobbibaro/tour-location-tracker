@@ -1,0 +1,4 @@
+- if user_signed_in? && current_user.admin?
+  .admin-nav-wrapper
+    .nav
+      = link_to 'Users', user_index_path
