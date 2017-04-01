@@ -33,6 +33,26 @@ file.
 
 Run any migrations: `$ rake db:migrate`
 
+Ensure that the following variables are set in your `./.env` file:
+
+_none at this time_
+
+and launch server with:
+
+```bash
+$ foreman start web
+```
+
+### Running Tests
+
+Launch tests with:
+
+```bash
+$ rspec spec
+```
+
+### Production
+
 Install Heroku Tool Belt:
 
 ```bash
@@ -52,23 +72,3 @@ $ heroku git:remote --app tour-location-tracker
 ```
 
 Note: Pushing to `heroku/master` will deploy to productions, so use caution!
-
-### Running Local Development Server
-
-Ensure that the following variables are set in your `./.env` file:
-
-_none at this time_
-
-and launch server with:
-
-```bash
-$ foreman start web
-```
-
-### Running Tests
-
-Launch tests with:
-
-```bash
-$ rspec spec
-```
